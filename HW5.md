@@ -117,9 +117,9 @@ plt.legend()
 
 ## Problem 2: Convexity in 1- and 2-Dimensions
 
-### 1. Using first and second derivatives confirm or reject that f is convex f(v)=(1−v)<sup>2</sup>
-#### f' = -2(1-v) we can see that f'(1)=0 which corresponds to the minimum of f.
-#### f'' = 2 We can see that f'' is always positive through its domain. This implies that f is convex.
+### 1. Using first and second derivatives confirm or reject that f is convex <!-- $f(v)=(1−v)^2$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\y2uD4ieut8.svg">
+#### <!-- $f' = -2(1-v)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\bmpSfkN8gt.svg"> we can see that <!-- $f'(1)=0$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\zFVerlKne2.svg"> which corresponds to the minimum of f.
+#### <!-- $f'' = 2$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\uwu0q0rtHe.svg"> We can see that <!-- $f''$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\kBqPWC6vA4.svg"> is always positive through its domain. This implies that f is convex.
 #### Let's have a visual approach.
 
 
@@ -173,13 +173,13 @@ plt.legend()
     
 
 
-### 2. g(v) and h(v) are convex, is f(v) = g(v) + h(v) convex?
-#### Since g and h are convex, we have that g'' and h'' are > 0. This means that f'' = g'' + h'' is also > 0 and therefore convex.
+### 2. <!-- $g(v)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\88O1PWXPmZ.svg"> and <!-- $h(v)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\qTNR0oS8Gi.svg"> are convex, is <!-- $f(v) = g(v) + h(v)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\JD9iOVbsvD.svg"> convex?
+#### Since <!-- $g$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\FpTOwDwUmf.svg"> and <!-- $h$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\uVt98FGywz.svg"> are convex, we have that <!-- $g''$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\YHx67wZas0.svg"> and <!-- $h''$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\fdPXtTB6Ln.svg"> are <!-- $> 0$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\kCPaPrlREQ.svg">. This means that <!-- $f'' = g'' + h''$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\znf6k0ohMU.svg"> is also > 0 and therefore convex.
 
-### 3. g(v)=(a−v<sup>2</sup>)<sup>2</sup> where a is a fixed real number.
-#### g' = -4v(a-v<sup>2</sup>)
-#### g'' = -4(a-3v<sup>2</sup>) 
-#### We want g'' = 12v<sup>2</sup> - 4a  > 0 &#8594; v<sup>2</sup> > $\frac{a}{3}$. This means that if  $a \le 0$  g is convex in $\Re$, else g is convex in the ranges $\brack -\infty,-\sqrt{\frac{a}{3}}$ $\bigcup$ $\brack \sqrt{\frac{a}{3}},\infty $.
+### 3. <!-- $g(v)=(a−v^2)^2$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\ggu0Jx6F7o.svg"> where <!-- $a$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\3evi9dPRNb.svg"> is a fixed real number.
+#### <!-- $g' = -4v(a-v^2)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\8zH1rfvec6.svg">
+#### <!-- $g'' = -4(a-3v^2)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\xmRv0HkLdr.svg"> 
+#### We want <!-- $g'' = 12v^2 - 4a  > 0  \to v^2 > \frac{a}{3}$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\6VckInGI0M.svg">. This means that if  <!-- $a \le 0$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\qSaKPat6yT.svg">  <!-- $g$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\lndLb1QPTR.svg"> is convex in <!-- $\Re$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\5MoeBiYEXC.svg">, else <!-- $g$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\YyVUP2jFf5.svg"> is convex in the ranges <!-- $\brack -\infty,-\sqrt{\frac{a}{3}}$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\OxqsdxF7ph.svg"> <!-- $\bigcup$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\Ktocm8Za1J.svg"> <!-- $\brack \sqrt{\frac{a}{3}},\infty $ --> <img style="transform: translateY(0.1em); background: white;" src="svg\NNZj8XTeJB.svg">.
 
 
 ```python
@@ -228,18 +228,18 @@ plt.legend()
     
 
 
-### 4. For a vector v=[v1 v2]$^T$, let $p(v)=(1−v_1)^2+100∗(v_2−v_1^2)^2$. Calculate the gradient and Hessian of p, and confirm or reject that p is convex everywhere in $\Re^2$
-$\nabla p = (2 (200 v_1^3 - 200 v_1 v_2 + v_1 - 1), 200 (y - x^2))$ 
+### 4. For a vector <!-- $v=[v1 v2]^T$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\jKIazAf7dq.svg">, let <!-- $p(v)=(1−v_1)^2+100∗(v_2−v_1^2)^2$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\055oWSW8Cl.svg">. Calculate the gradient and Hessian of <!-- $p$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\InsNLAP2tY.svg">, and confirm or reject that <!-- $p$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\qPmGYBAck5.svg"> is convex everywhere in <!-- $\Re^2$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\5utkzbpM9a.svg">
+<!-- $\nabla p = (2 (200 v_1^3 - 200 v_1 v_2 + v_1 - 1), 200 (y - x^2))$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\34apXi2x5R.svg"> </br>
 
-H=$\begin{bmatrix}(-400 (v_2 - v_1^2) + 800 v_1^2 + 2 & -400 v_1\\-400 v_1 & 200\end{bmatrix}$
+<!-- $H=\begin{bmatrix}(-400 (v_2 - v_1^2) + 800 v_1^2 + 2 & -400 v_1\\-400 v_1 & 200\end{bmatrix}$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\XD0izr4qFC.svg">  </br>
 
-$\lambda_1 = 600 v_1^2 - \sqrt{360000 v_1^4 - 240000 v_1^2 v_2 + 41200 v_1^2 + 40000 v_2^2 + 39600 v_2 + 9801} - 200 v_2 + 101$
-$\lambda_2 = 600 v_1^2 + \sqrt{360000 v_1^4 - 240000 v_1^2 v_2 + 41200 v_1^2 + 40000 v_2^2 + 39600 v_2 + 9801} - 200 v_2 + 101$
+<!-- $\lambda_1 = 600 v_1^2 - \sqrt{360000 v_1^4 - 240000 v_1^2 v_2 + 41200 v_1^2 + 40000 v_2^2 + 39600 v_2 + 9801} - 200 v_2 + 101$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\IgiejriapV.svg"> </br>
+<!-- $\lambda_2 = 600 v_1^2 + \sqrt{360000 v_1^4 - 240000 v_1^2 v_2 + 41200 v_1^2 + 40000 v_2^2 + 39600 v_2 + 9801} - 200 v_2 + 101$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\m6p7YRcb3B.svg"> </br>
 
-It is clear that $\lambda_1 \le \lambda_2 $ therefore, we need to find the conditions that fulfill $\lambda_1>0$
-$600 v_1^2 - \sqrt{360000 v_1^4 - 240000 v_1^2 v_2 + 41200 v_1^2 + 40000 v_2^2 + 39600 v_2 + 9801} - 200 v_2 + 101 > 0$
+It is clear that <!-- $\lambda_1 \le \lambda_2 $ --> <img style="transform: translateY(0.1em); background: white;" src="svg\PluZUHjRlq.svg"> therefore, we need to find the conditions that fulfill <!-- $\lambda_1>0$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\MI2KgjW01g.svg">
+<!-- $600 v_1^2 - \sqrt{360000 v_1^4 - 240000 v_1^2 v_2 + 41200 v_1^2 + 40000 v_2^2 + 39600 v_2 + 9801} - 200 v_2 + 101 > 0$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\lrZNsNc0Og.svg">
 
-#### Finally, p is convex when $v_2 < \frac{1}{200} (200 v_1^2 + 1)$
+#### Finally, p is convex when <!-- $v_2 < \frac{1}{200} (200 v_1^2 + 1)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\OIxXPJ9LX9.svg">
 
 
 ```python
@@ -283,7 +283,7 @@ for i in range(-10,10):
 pos_eigen = [0 if item<0 else 1 if item==0 else 2 for item in min_eigen]
 ```
 
-#### The smallest eigenvalue, appears to be negative inside a parabole, therefore we can conclude that p is convex in the dark area corresponding to $v_2 < \frac{1}{200} (200 v_1^2 + 1)$
+#### The smallest eigenvalue, appears to be negative inside a parabole, therefore we can conclude that p is convex in the dark area corresponding to <!-- $v_2 < \frac{1}{200} (200 v_1^2 + 1)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\bT9hhDFYzd.svg">
 
 
 ```python
@@ -304,16 +304,16 @@ plt.show()
 
 ### 1. How Nelder-Mead Search works 
 Explanation from https://www.youtube.com/watch?v=vOYlVvT3W80 and GIF from http://takashiida.floppy.jp/en/education-2/gif-nelder-mead/
-<img src="neldermead.gif" alt="drawing" width="400">
-The Nelder-Mead method is a direct search method, meaning that it does not require the computation of the gradient. This makes it very useful for cases where either the gradient is hard to obtain/evaluate or if the function is not smooth. It is based on a n+1 dimension structure called a *simplex*, for example, if we are in $\Re^2$, it will be a triangle (3 points) and in each iteration, this points are updated. Let's take **u**, **v** and **w** as our three points. 
+<img src="neldermead.gif" alt="drawing" width="400"> </br>
+The Nelder-Mead method is a direct search method, meaning that it does not require the computation of the gradient. This makes it very useful for cases where either the gradient is hard to obtain/evaluate or if the function is not smooth. It is based on a n+1 dimension structure called a *simplex*, for example, if we are in <!-- $\Re^2$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\tfRs1AK6RK.svg">, it will be a triangle (3 points) and in each iteration, this points are updated. Let's take **u**, **v** and **w** as our three points. 
 
 In each iteration, there are 6 steps:
 <ol>
-<li><strong>Sort</strong>: Sort and label the points according to the function's value $f(u) < f(v) < f(w)$ <strong>u</strong> is the best point and <strong>w</strong> is the worst. <img src="sort.png" alt="drawing" width="200"></li>
-<li><strong>Reflect</strong>: Reflect the worst point through the centroid of the two remaining points, point <strong>r</strong>. If $f(r) < f(v)$ but $f(u) < f(r)$, then <strong>w = r</strong>. Now <strong>v</strong> is the worst performing point. Go to step 6: Check for Convergence. <img src="reflect.png" alt="drawing" width="200"></li>
-<li><strong>Extend</strong>: If $f(r) < f(u)$ then we extend <strong>r</strong> to <strong>e</strong>. If $f(e) < f(r)$ then <strong>w = e</strong> else <strong>w = r</strong>. Go to step 6: Check for Convergence. <img src="extend.png" alt="drawing" width="200"></li>
-<li><strong>Contract</strong>: If $f(r) > f(v)$, <strong>w</strong> is contracted to <strong>c<sub>0</sub></strong> (outside) and <strong>c<sub>i</sub></strong> (inside) where $c_i = \frac{1}{4}(w-r)$ and $c_o = \frac{3}{4}(w-r)$ and evaluate $f(c_o)$ and $f(c_i)$. If either performs better than <strong>v</strong>, then <strong>w</strong> = best performing between <strong>c<sub>0</sub></strong> and <strong>c<sub>i</sub></strong>. Go to step 6: Check for Convergence. <img src="contract.png" alt="drawing" width="200"></li>
-<li><strong>Shrink</strong>: If the contracted points do not outperform <strong>v</strong>, then we shrink the simplex towards the <strong>u</strong>, the best performing point with <strong>w = w'</strong> and <strong>v = v'</strong>, where <strong>v'</strong> is the halfway point between <strong>u</strong> and <strong>v</strong> and <strong>w'</strong> is the halfway point between <strong>u</strong> and <strong>w</strong>. Go to step 6: Check for Convergence. <img src="shrink.png" alt="drawing" width="200"> </li>
+<li><strong>Sort</strong>: Sort and label the points according to the function's value $f(u) < f(v) < f(w)$ <strong>u</strong> is the best point and <strong>w</strong> is the worst. </br> <img src="sort.png" alt="drawing" width="200"></li>
+<li><strong>Reflect</strong>: Reflect the worst point through the centroid of the two remaining points, point <strong>r</strong>. If <!-- $f(r) < f(v)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\T0aRPROuqU.svg"> but <!-- $f(u) < f(r)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\okvfFtV6pC.svg">, then <strong>w = r</strong>. Now <strong>v</strong> is the worst performing point. Go to step 6: Check for Convergence. </br> <img src="reflect.png" alt="drawing" width="200"></li> 
+<li><strong>Extend</strong>: If <!-- $f(r) < f(u)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\kruLUGkAQ7.svg"> then we extend <strong>r</strong> to <strong>e</strong>. If <!-- $f(e) < f(r)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\MCxlwzGJZ3.svg"> then <strong>w = e</strong> else <strong>w = r</strong>. Go to step 6: Check for Convergence. </br> <img src="extend.png" alt="drawing" width="200"></li>
+<li><strong>Contract</strong>: If <!-- $f(r) > f(v)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\hMjY1U8xon.svg">, <strong>w</strong> is contracted to <strong>c<sub>0</sub></strong> (outside) and <strong>c<sub>i</sub></strong> (inside) where <!-- $c_i = \frac{1}{4}(w-r)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\swCpmZZkJL.svg"> and <!-- $c_o = \frac{3}{4}(w-r)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\TPTpLa6eyL.svg"> and evaluate <!-- $f(c_o)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\7zxkOljlMW.svg"> and <!-- $f(c_i)$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\p437lf9lc9.svg">. If either performs better than <strong>v</strong>, then <strong>w</strong> = best performing between <strong>c<sub>0</sub></strong> and <strong>c<sub>i</sub></strong>. Go to step 6: Check for Convergence. </br> <img src="contract.png" alt="drawing" width="200"></li>
+<li><strong>Shrink</strong>: If the contracted points do not outperform <strong>v</strong>, then we shrink the simplex towards the <strong>u</strong>, the best performing point with <strong>w = w'</strong> and <strong>v = v'</strong>, where <strong>v'</strong> is the halfway point between <strong>u</strong> and <strong>v</strong> and <strong>w'</strong> is the halfway point between <strong>u</strong> and <strong>w</strong>. Go to step 6: Check for Convergence. </br> <img src="shrink.png" alt="drawing" width="200"> </li>
 <li><strong>Check Convergence</strong>: There are many ways to check convergence, but a common one is to check whether the standard deviation between the points of the simplex is below some pre defined tolerance. </li>
 </ol>
 
@@ -330,6 +330,11 @@ def objective_p(x):
 maxiterations = 5
 optimizer = [1,1]
 
+pts = []
+
+NMAs = []
+CGs = []
+
 NMA_distance = []
 CG_distance = []
 
@@ -338,22 +343,70 @@ for i in range(10):
     p2 = [np.around([np.random.uniform(-3, 12)], decimals=1)[0], np.around([np.random.uniform(-6, 60)])[0]]
     p3 = [np.around([np.random.uniform(-3, 12)], decimals=1)[0], np.around([np.random.uniform(-6, 60)])[0]]
     pt = [p1, p2, p3]
+    pts.append(pt)
     
     NMA = minimize(objective_p, pt, method='nelder-mead', options={'maxiter':maxiterations})
-    CG = minimize(objective_p, pt, method='CG', options={'maxiter':maxiterations})
+    CG = minimize(objective_p, p1, method='CG', options={'maxiter':maxiterations})
     
     # evaluate solutions
     solution_NMA = NMA['x']
     evaluation_NMA = objective_p(solution_NMA)
     
-    # euclidean distance
-    NMA_distance.append((solution_NMA[0] - optimizer[0])**2 + (solution_NMA[1] - optimizer[1])**2)
-    
     solution_CG = CG['x']
     evaluation_CG = objective_p(solution_CG)
-    CG_distance.append((solution_CG[0] - optimizer[0])**2 + (solution_CG[1] - optimizer[1])**2)
     
+    NMAs.append(solution_NMA)
+    CGs.append(solution_CG)
+
+NMAs = np.array(NMAs)
+CGs = np.array(CGs)
 ```
+
+
+```python
+[X, Y] = np.meshgrid(NMAs[:,0], NMAs[:,1])
+NMA_distance = np.log10(( X - 1)**2 + (Y - 1)**2)
+
+plt.contour(X, Y, NMA_distance, levels=5)
+plt.xlabel('X')
+plt.ylabel('Y')
+```
+
+
+
+
+    Text(0, 0.5, 'Y')
+
+
+
+
+    
+![png](output_37_1.png)
+    
+
+
+
+```python
+[X, Y] = np.meshgrid(CGs[:,0], CGs[:,1])
+
+CG_distance = np.log10(( X - 1)**2 + (Y - 1)**2)
+plt.contour(X, Y, CG_distance, levels=5)
+plt.xlabel('X')
+plt.ylabel('Y')
+```
+
+
+
+
+    Text(0, 0.5, 'Y')
+
+
+
+
+    
+![png](output_38_1.png)
+    
+
 
 
 ```python
